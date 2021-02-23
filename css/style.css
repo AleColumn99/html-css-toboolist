@@ -10,14 +10,21 @@ body {
 header {
   background-color: #FFFFFF;
   height: 60px;
-  box-sizing: border-box;
-  margin-bottom: 10%;
+  margin-bottom: 30px;
+  line-height: 60px;
 }
 
-header .title {
-  display: inline;
+header img {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 20px;
+}
+
+header h1 {
+  display: inline-block;
   margin-left: 10px;
   font-weight: 700;
+  vertical-align: middle;
 }
 
 .container {
@@ -33,15 +40,24 @@ header .title {
   margin-bottom: 1%;
 }
 
-main button {
+button {
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-right: 5px;
+  padding: 5px;
+  border-radius: 5px;
 }
 
-main button .clickable {
+.clickable {
   background-color: #47ADF1;
   border: none;
   color: #FFFFFF;
+}
+
+.non-clickable {
+  background-color: #FFFFFF;
+  border: 1px solid #D5DADD;
+  color: #D5DADD;
 }
 
 main h3 {
@@ -52,11 +68,15 @@ main h3 {
   padding-bottom: 1%;
 }
 
-.check {
-  display: inline;
-  border 1px solid green;
+.check .cross {
+  border 2px solid #65C0AA;
   padding: 5px;
   border-radius: 10px;
+  color: red;
+}
+
+.cross {
+
 }
 
 .tag {
