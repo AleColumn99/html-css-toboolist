@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/style.css">
     <title>Toboolist</title>
   </head>
@@ -15,44 +15,55 @@
     
     <header> 
 
-      <img src="img/Logo.png" alt="logo">
-      <h1>Toboolist</h1>
+      <img src="img/Logo.png" class="logo" alt="logo toboolist">
+      <span class="logo-text">Toboolist</span>
 
     </header>
 
     <main>
 
-      <div class="buttons">
+      <div class="container">
 
-        <div class="container">
+        <div class="top">
 
-          <button class="clickable">Add task</button>
-          <button class="non-clickable">Add section</button>
+          <button class="btn clickable"><a href="https://link.com">Add task</a></button>
 
-        </div>
+          <button class="btn non-clickable"><a href="https://link.com">Add section</a></button>
 
-      </div>
-      
-      <div class="tasks">
+        </div>        
 
-        <div class="container">
+        <div class="tasks">
 
-          <h3>&#9662; New Task</h3>
-          <p><span class="check">&check;</span> Quarterly Newsletter <span class="tag editorial">Editorial</span></p>
+          <ul>
+            <li>
+              <h3>New Task</h3>
+              <ul>
+                <li><span class="circle checked"></span>Quarterly Newsletter <span class="tag tag-type-editorial">Editorial</span></li>
+              </ul>
+            </li>
 
-          <h3>&#9662; Today</h3>
-          <p><span class="check">&check;</span> Recruiting Blog Post <span class="tag editorial">Editorial</span></p>
-          <p><span class="check">&check;</span> Mobile app launch <span class="tag goals">Q1 Goals</span></p>
-          <p><span class="cross">&cross;</span> Interview John H. <span class="tag recruiting">Recruiting</span></p>
-          <p><span class="check">&check;</span> Summit update to mobile stormfront <span class="tag mobile">Mobile</span></p>
+            <li>
+              <h3>Today</h3>
+              <ul>
+                <li><span class="circle checked"></span>Recruiting blog post <span class="tag tag-type-editorial">Editorial</span></li>
+                <li><span class="circle checked"></span>Mobile app luaunch <span class="tag tag-type-goals">Q1 Goals</span></li>
+                <li><span class="circle delete"></span>Interview John H. <span class="tag tag-type-recruting">Recruiting</span></li>
+                <li><span class="circle checked"></span>Summit update to mobiile storefronts <span class="tag tag-type-mobile">Mobile</span></li>
+              </ul>
+            </li>
 
-          <h3>&#9662; Upcoming</h3>
-          <p><span class="cross">&cross;</span> Schedule meeting with Alex</p>
-          <p><span class="check">&check;</span> Homepage refresh <span class="tag website">Website</span></p>
-          <p><span class="check">&check;</span> Onboard new Sales team members <span class="tag sales">Sales</span></p>
-          <p><span class="check">&check;</span> Review editorial calendar <span class="tag editorial">Editorial</span></p>
+            <li>
+              <h3>Upcoming</h3>
+              <ul>
+                <li><span class="circle delete"></span>Schedule meeting with Alex </li>
+                <li><span class="circle checked"></span>Homepage refresh <span class="tag tag-type-website">Website</span></li>
+                <li><span class="circle checked"></span>Onboard new Sales team members <span class="tag tag-type-sales">Sales</span></li>
+                <li><span class="circle checked"></span>Review editorial calendar <span class="tag tag-type-editorial">Editorial</span></li>
+              </ul>
+            </li>
+          </ul>
 
-        </div>
+        </div> 
 
       </div>
 
@@ -61,3 +72,18 @@
   </body>
 
 </html>
+
+     <!-- <h3>&#9662; New Task</h3>
+          <p><span class="check">&check;</span> Quarterly Newsletter <span class="tag editorial">Editorial</span></p>
+  
+          <h3>&#9662; Today</h3>
+          <p><span class="check">&check;</span> Recruiting Blog Post <span class="tag editorial">Editorial</span></p>
+          <p><span class="check">&check;</span> Mobile app launch <span class="tag goals">Q1 Goals</span></p>
+          <p><span class="cross">&cross;</span> Interview John H. <span class="tag recruiting">Recruiting</span></p>
+          <p><span class="check">&check;</span> Summit update to mobile stormfront <span class="tag mobile">Mobile</span></p>
+  
+          <h3>&#9662; Upcoming</h3>
+          <p><span class="cross">&cross;</span> Schedule meeting with Alex</p>
+          <p><span class="check">&check;</span> Homepage refresh <span class="tag website">Website</span></p>
+          <p><span class="check">&check;</span> Onboard new Sales team members <span class="tag sales">Sales</span></p>
+          <p><span class="check">&check;</span> Review editorial calendar <span class="tag editorial">Editorial</span></p> -->
